@@ -6,7 +6,7 @@ import user from './user.json'
 
 const Profile = () => { 
   
-    return <div className="profile">
+  return <div className="profile">
   <div className="description">
     <img
       src={user.avatar}

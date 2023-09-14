@@ -14,16 +14,76 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.description {
-  display: block;
-  width: 450px;
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 350px;
+  margin-bottom: 50px;
+  margin-top: 50px;
   background-color: #fff;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
 }
 .avatar {
   width: 300px;
+  border-radius: 50%;
+  border: 1px solid black;
 }
 .stats {
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
-  gap: 24px;
+
   list-style: none;
+  background-color: lightgrey;
+}
+.li-item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(100% / 3);
+  padding: 12px;
+  align-items: center;
+  border: 1px solid black;
+}
+.statistics-name {
+  padding: 0;
+  margin-bottom: 0;
+  justify-content: space-between;
+  display: flex;
+  list-style: none;
+  width: 100%;
+  background-color: lightcoral;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  align-items: center;
+}
+.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 350px;
+  background-color: #fff;
+}
+.statusOnline {
+  background-color: green;
+  width: 30px;
+  height: 30px;
+}
+.statusOffline {
+  background-color: red;
+  width: 30px;
+  height: 30px;
 }

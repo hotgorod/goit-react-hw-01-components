@@ -1,10 +1,11 @@
 import StatisticsItem from './StatisticsItem';
+import css from './Statistics.module.css'
 
 const Statistics = ({ title, stats }) => {
-  return <section className="statistics">
+  return <section className={css.statistics}>
     <h2 className="title">{title}</h2>
-    <ul className='statistics-name'>
-        {stats.map(item => <li key={item.id} className="item">
+    <ul className={css.statisticsName}>
+        {stats.map(item => <li key={item.id} className={css.item}>
             <StatisticsItem 
               label={item.label}
               percentage = {item.percentage}

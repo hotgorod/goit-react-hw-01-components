@@ -1,9 +1,11 @@
-import Profile from "./Profile";
+import Profile from "./Profile/Profile";
 import user from '../data/user.json'
-import Statistics from "./Statistics";
+import Statistics from "./Statistics/Statistics";
 import data from '../data/data.json'
-import FriendList from "./FriendList";
+import FriendList from "./Friendslist/FriendList";
 import friends from '../data/friends.json'
+import TransactionHistory from "./TransactionHystory/TransactionHistory";
+import transactions from '../data/transactions.json'
 
 
 export const App = () => {
@@ -28,6 +30,9 @@ export const App = () => {
         friends = {friends}
       />    
       
+      <TransactionHistory
+        items = {transactions}
+      />
     </div>
    
   );
